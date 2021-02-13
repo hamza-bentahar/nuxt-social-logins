@@ -45,7 +45,7 @@ export default (ctx, inject) => {
 			return new Promise((resolve, reject) => {
 				auth2
 					.signIn()
-					.then(() => {
+					.then((response) => {
 						const profile = auth2.currentUser
 							.get()
 							.getBasicProfile();
@@ -58,6 +58,7 @@ export default (ctx, inject) => {
 
 						resolve({
 							signedIn: true,
+							accessToken: response.xc.access_token,
 							userData: userData,
 						});
 					})
@@ -82,6 +83,6 @@ export default (ctx, inject) => {
 	};
 
 	ctx.$googleAuth = googleAuth
-	inject('googleAuth', googleAuth)	
+	inject('googleAuth', googleAuth)
 	Vue.component('google-button', GoogleButton);
 };
