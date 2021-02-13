@@ -16,27 +16,27 @@ It allows the user to authenticate with Google or Facebook, and returns the acti
 Install the package:
 
 ```sh
-yarn add @glarus-labs/nuxt-social-logins
+yarn add @hamza-bentahar/nuxt-social-logins
 ```
 
 _or_
 
 ```sh
-npm i @glarus-labs/nuxt-social-logins
+npm i @hamza-bentahar/nuxt-social-logins
 ```
 
 <br/>
 
 ## <a id="setup"></a>Setup
 
-Add  `@glarus-labs/nuxt-social-logins` under modules in `nuxt.config.js`
+Add  `@hamza-bentahar/nuxt-social-logins` under modules in `nuxt.config.js`
 
 ```js
 // nuxt.config.js
 
 {
   modules: [
-    '@glarus-labs/nuxt-social-logins',
+    '@hamza-bentahar/nuxt-social-logins',
   ],
 }
 ```
@@ -46,7 +46,7 @@ Add  `@glarus-labs/nuxt-social-logins` under modules in `nuxt.config.js`
 ```js
 {
   modules: [
-    ['@glarus-labs/nuxt-social-logins', {
+    ['@hamza-bentahar/nuxt-social-logins', {
         // options
     }]
   ],
@@ -58,7 +58,7 @@ or in a separate `socialLogins` key:
 ```js
 {
   modules: [
-    '@glarus-labs/nuxt-social-logins',
+    '@hamza-bentahar/nuxt-social-logins',
   ],
   socialLogins: {
       // options
