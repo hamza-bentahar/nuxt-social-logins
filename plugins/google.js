@@ -58,7 +58,7 @@ export default (ctx, inject) => {
 
 						resolve({
 							signedIn: true,
-							accessToken: response.xc.access_token,
+							accessToken: response.uc.access_token,
 							userData: userData,
 						});
 					})
