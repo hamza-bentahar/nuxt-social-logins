@@ -53,6 +53,7 @@ export default (ctx, inject) => {
 							FB.api('/me', USER_PROFILE_QUERY, (profile) => {
 								resolve({
 									signedIn: true,
+									accessToken: response.authResponse.accessToken,
 									userData: {
 										id: profile.id,
 										firstName: profile.first_name,
