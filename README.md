@@ -16,12 +16,6 @@ It allows the user to authenticate with Google or Facebook, and returns the acti
 Install the package:
 
 ```sh
-yarn add @hamza-bentahar/nuxt-social-logins
-```
-
-_or_
-
-```sh
 npm i @hamza-bentahar/nuxt-social-logins
 ```
 
